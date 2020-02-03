@@ -1,16 +1,23 @@
 package com.schamle.query;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.MockitoAnnotations;
 
-import javax.inject.Inject;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 
 class QueriesTest {
 
-    @Inject
+    @InjectMocks
     Queries queries;
+
+    @BeforeEach
+    void setup() {
+        MockitoAnnotations.initMocks(this);
+    }
 
     @Test
     void getTest() {
