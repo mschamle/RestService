@@ -13,7 +13,7 @@ import javax.ws.rs.core.MediaType;
 
 @ApplicationScoped
 @Path ("query")
-@Produces(MediaType.APPLICATION_JSON)
+//@Produces(MediaType.APPLICATION_JSON)
 @NoArgsConstructor
 @Slf4j
 public class Queries {
